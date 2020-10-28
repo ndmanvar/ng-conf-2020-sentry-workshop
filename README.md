@@ -24,7 +24,9 @@ npm deploy
 
 ## Setup Sentry + install SDK
 1. Go to https://sentry.io/signup + 'create your account'.
+
 2. Follow onboarding steps (select angular project) and instrument code as specified. Helps to have `npm start` running for live reloading
+
 3. Verify event shot to Sentry (in onboarding instructions) and take a look at issue
 
 ### Upload source maps (so we can see actual names and stacktraces)
