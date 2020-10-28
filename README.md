@@ -25,7 +25,7 @@ npm deploy
 ## Setup Sentry + install SDK
 1. Go to https://sentry.io/signup + 'create your account'.
 
-2. Follow onboarding steps (select angular project) and instrument code as specified. 
+2. Follow onboarding steps (select angular project) and instrument code as specified.
 
 3. Then build and run server with
 ```
@@ -44,7 +44,7 @@ Sentry.init({
 
 2. Install sentry-cli to upload sourcemaps
 ```
-npm install --save @sentry/cli
+npm install --save-dev @sentry/cli
 ```
 
 3. Create production bundles and sourcemaps
