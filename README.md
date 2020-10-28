@@ -15,7 +15,7 @@ npm install
 ```
 4. Then build and run server with
 ```
-npm deploy
+npm run deploy
 ```
 5. Verify web server is running properly and app can be loaded (go to http://localhost:5000 in the browser and trigger errors)
 
@@ -29,7 +29,7 @@ npm deploy
 
 3. Then build and run server with
 ```
-npm deploy
+npm run deploy
 ```
 4. Go to http://localhost:5000 and trigger errors. The Sentry onboarding (part-3) should note that event was successfully. Follow link to event in Sentry.io.
 
