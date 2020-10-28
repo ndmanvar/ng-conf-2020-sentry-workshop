@@ -17,7 +17,7 @@ npm install
 ```
 npm deploy
 ```
-5. Verify web server is running properly and app can be loaded (go to http://localhost:5000 in the browser)
+5. Verify web server is running properly and app can be loaded (go to http://localhost:5000 in the browser and trigger errors)
 
 6. You should be set for the workshop, where you will add Sentry into this angular application to monitor errors.
 
@@ -25,9 +25,13 @@ npm deploy
 ## Setup Sentry + install SDK
 1. Go to https://sentry.io/signup + 'create your account'.
 
-2. Follow onboarding steps (select angular project) and instrument code as specified. Helps to have `npm start` running for live reloading
+2. Follow onboarding steps (select angular project) and instrument code as specified. 
 
-3. Verify event shot to Sentry (in onboarding instructions) and take a look at issue
+3. Then build and run server with
+```
+npm deploy
+```
+4. Go to http://localhost:5000 and trigger errors. The Sentry onboarding (part-3) should note that event was successfully. Follow link to event in Sentry.io.
 
 ### Upload source maps (so we can see actual names and stacktraces)
 1. Specify `release` in Sentry SDK
