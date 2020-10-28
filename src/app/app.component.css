@@ -1,0 +1,71 @@
+.App {
+    text-align: center;
+    background-image: url('../assets/sentry-pattern.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.App-logo {
+    /* animation: App-logo-spin infinite 20s linear; */
+    height: 80px;
+}
+
+.App-header {
+    /* background-image: url('../assets/sentry-pattern.png'); */
+    height: 150px;
+    padding: 20px;
+    color: black;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+h3 {
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+li img {
+    float: left;
+    /* margin: 0 15px 0 0; */
+    height: 50px;
+}
+
+li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.left {
+    /* margin: auto; */
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+
+.right {
+    /* margin: auto; */
+    width: 50%;
+    padding: 10px;
+    float: right;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100%
+}
+
+#root {
+    height: 100%;
+}
