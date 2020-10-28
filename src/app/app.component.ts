@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as Sentry from "@sentry/browser";
+// import * as Sentry from "@sentry/browser";
 
 @Component({
   selector: 'app-root',
@@ -22,9 +22,9 @@ export class AppComponent {
 
   handleSubmit() {
     this.currentUser = this.textValue;
-    Sentry.configureScope(scope => {
-      scope.setUser({email: this.currentUser});
-    });
+    // Sentry.configureScope(scope => {
+    //   scope.setUser({email: this.currentUser});
+    // });
   }
 
   malformed() {
