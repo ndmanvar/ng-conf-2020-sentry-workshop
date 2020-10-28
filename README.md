@@ -112,4 +112,4 @@ Go to http://localhost:5000 + click on errors
 4. Pull up error/issue on Sentry. You should see 'Suspect Commit' and 'Suggested Assignee'
 
 # Notes
-In case you get lost, the working code can be found in the `final-state` branch (https://github.com/ndmanvar/ng-conf-2020-sentry-workshop/tree/final-state)
+In case you get lost, the working code can be found in the `final-state` branch (https://github.com/ndmanvar/ng-conf-2020-sentry-workshop/tree/final-code)
