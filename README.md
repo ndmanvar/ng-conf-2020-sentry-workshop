@@ -28,12 +28,20 @@ npm deploy
 3. Verify event shot to Sentry (in onboarding instructions) and take a look at issue
 
 ### Upload source maps (so we can see actual names and stacktraces)
-1. Install sentry-cli to upload sourcemaps
+1. Specify `release` in Sentry SDK
+```
+Sentry.init({
+    ...,
+    release: environment.release
+})
+```
+
+2. Install sentry-cli to upload sourcemaps
 ```
 npm install --save @sentry/cli
 ```
 
-2. Create production bundles and sourcemaps
+3. Create production bundles and sourcemaps
 ```
 # In angular.json, this is already done
 "sourceMap": true
@@ -43,26 +51,26 @@ npm install --save @sentry/cli
 npm run deploy
 ```
 
-3. In Makefile, remove placeholder `setup_release` and uncomment actual one (which is calling `upload_sourcemaps`).
+4. In Makefile, remove placeholder `setup_release` and uncomment actual one (which is calling `upload_sourcemaps`).
 
-4. Create 'New Internal Integration' to obtain AUTH_TOKEN.
+5. Create 'New Internal Integration' to obtain AUTH_TOKEN.
 > _Organization Settings -> Developer Settings -> 'New Internal Integration'_
 
 
-5. Specify SENTRY_AUTH_TOKEN as environment variable
+6. Specify SENTRY_AUTH_TOKEN as environment variable
 ```
 export SENTRY_AUTH_TOKEN=<YOUR_AUTH_TOKEN>
 ```
 
-6. Specify `SENTRY_ORG` and `SENTRY_PROJECT` accordingly in Makefile
+7. Specify `SENTRY_ORG` and `SENTRY_PROJECT` accordingly in Makefile
 
-7. Run build/deploy:
+8. Run build/deploy:
 ```
 npm run deploy
 ```
 Verify Source Maps are uploadedProject Settings -> Source Maps).
 
-8. Trigger new errors (http://localhost:5000) and verify filename/stacktrace
+9. Trigger new errors (http://localhost:5000) and verify filename/stacktrace
 
 
 
