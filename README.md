@@ -71,26 +71,33 @@ export SENTRY_AUTH_TOKEN=<YOUR_AUTH_TOKEN>
 ```
 npm run deploy
 ```
-Verify Source Maps are uploadedProject Settings -> Source Maps).
+Verify Source Maps are uploaded
+
+> _Project Settings -> Source Maps_
 
 9. Trigger new errors (http://localhost:5000) and verify filename/stacktrace
 
 
-
 ## Sentry Performance
 1. Head over to `Performance` on left hand side
+
 2. Drill down on transaction to view distributed trace
 
 
 ## Integrations
 
 ### Slack (alerting/nofication)
-1. Organization Settings -> Integrations -> Slack
+1. Add Slack integration
+
+> Organization Settings -> Integrations -> Slack
+
 2. Specify in alert rule
+
 3. Trigger error and verify alert
 
 ### GitHub
-1. Head over to the GitHub Integration:
+1. Add GitHub integration
+
 > _Organization Settings -> Integrations -> GitHub_
 
 2. Add `associate_commits` to `setup_release` in Makefile
@@ -102,8 +109,6 @@ npm run deploy
 Go to http://localhost:5000 + click on errors
 
 4. Pull up error/issue on Sentry. You should see 'Suspect Commit' and 'Suggested Assignee'
-
-
 
 # Notes
 In case you get lost, the working code can be found in the `final-state` branch (https://github.com/ndmanvar/ng-conf-2020-sentry-workshop/tree/final-state)
