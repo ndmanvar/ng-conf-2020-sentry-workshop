@@ -49,12 +49,8 @@ npm install --save @sentry/cli
 
 3. Create production bundles and sourcemaps
 ```
-# In angular.json, this is already done
+# In angular.json, this is already done. Checkout source maps at dist/
 "sourceMap": true
-```
-```
-#  To produce production bundle and source maps
-npm run deploy
 ```
 
 4. In Makefile, remove placeholder `setup_release` and uncomment actual one (which is calling `upload_sourcemaps`).
