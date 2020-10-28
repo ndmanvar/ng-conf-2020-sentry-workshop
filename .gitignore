@@ -41,3 +41,5 @@ Thumbs.db
 
 # src/.ts-e.js
 **/*.ts-e
+
+.env
