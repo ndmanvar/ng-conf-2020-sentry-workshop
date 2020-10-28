@@ -87,17 +87,18 @@ Verify Source Maps are uploaded
 ## Integrations
 
 ### Slack (alerting/nofication)
-1. Add Slack integration
+1. Enable Business Trial (to enable integrations + full feature set)
+> _Organization Settings -> Subscription -> 'Activate Your Trial'_
 
-> Organization Settings -> Integrations -> Slack
+2. Add Slack integration
+> _Organization Settings -> Integrations -> Slack_
 
-2. Specify in alert rule
+3. Specify in alert rule
 
-3. Trigger error and verify alert
+4. Trigger error and verify alert
 
 ### GitHub
 1. Add GitHub integration
-
 > _Organization Settings -> Integrations -> GitHub_
 
 2. Add `associate_commits` to `setup_release` in Makefile
