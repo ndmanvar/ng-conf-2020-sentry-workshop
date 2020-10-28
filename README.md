@@ -62,6 +62,7 @@ npm run deploy
 5. Create 'New Internal Integration' to obtain AUTH_TOKEN.
 > _Organization Settings -> Developer Settings -> 'New Internal Integration'_
 
+> **_NOTE:_**  `Relases: Admin` permission is needed
 
 6. Specify SENTRY_AUTH_TOKEN as environment variable
 ```
