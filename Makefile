@@ -2,16 +2,16 @@
 # Following variable must be passed in
 #  SENTRY_AUTH_TOKEN
 
-SENTRY_ORG=testorg-az
-SENTRY_PROJECT=ng-demo
+SENTRY_ORG=mycompany1
+SENTRY_PROJECT=mycompany1
 PREFIX=dist
 SENTRY_CLI=./node_modules/.bin/sentry-cli
 VERSION=`$(SENTRY_CLI) releases propose-version`
 
-setup_release:
-	echo "TODO: <PLACEHOLDER>"
+# setup_release:
+# 	echo "TODO: <PLACEHOLDER>"
 
-# setup_release: create_release upload_sourcemaps
+setup_release: create_release upload_sourcemaps
 
 create_release:
 	$(SENTRY_CLI) releases -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(VERSION)
